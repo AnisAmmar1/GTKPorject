@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation de l'entreprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo de l'entreprise">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <h1>Bienvenue chez GTK</h1>
+        <p>Votre partenaire de confiance pour IT.</p>
+        <a href="#services" class="btn">Découvrez nos services</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Nos Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Service 1</h3>
+                <p>Description du service 1.</p>
+            </div>
+            <div class="service-item">
+                <h3>Service 2</h3>
+                <p>Description du service 2.</p>
+            </div>
+            <div class="service-item">
+                <h3>Service 3</h3>
+                <p>Description du service 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="apropos" class="about">
+        <h2>À propos de nous</h2>
+        <p>Informations sur l'entreprise, son histoire, sa mission, etc.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GTK. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
