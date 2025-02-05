@@ -3,9 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff; /* Bleu clair */
-    color: #333;
-    box-sizing: border-box; /* Pour inclure les marges et les bordures dans les dimensions */
+    background-color: #132d44; /* Bleu sombre */
+    color: #ffffff; /* Texte en blanc */
+    box-sizing: border-box;
 }
 
 /* HEADER */
@@ -13,14 +13,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #008080; /* Vert sarcelle */
+    background-color: #14151a; /* Gris foncé pour le header */
     padding: 15px 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
     height: 50px;
-    max-width: 100%; /* S'assure que l'image s'adapte à la taille */
+    max-width: 100%;
 }
 
 nav ul {
@@ -43,14 +43,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00ffcc; /* Vert clair */
+    color: #ffffff; /* Couleur du texte au survol reste blanc */
 }
 
 /* HERO SECTION */
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #008080, #00bfff); /* Dégradé vert-bleu */
+    background: linear-gradient(135deg, #14151a, #132d44); /* Dégradé gris-bleu */
     color: white;
 }
 
@@ -67,8 +67,8 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #00ffcc;
-    color: #008080;
+    background-color: #ffffff; /* Bouton blanc */
+    color: #132d44; /* Texte bleu sombre */
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -76,19 +76,21 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #00bfff;
+    background-color: #132d44; /* Fond bleu sombre au survol */
+    color: #ffffff; /* Texte en blanc au survol */
 }
 
 /* SERVICES */
 .services {
     padding: 60px 20px;
     text-align: center;
+    background-color: #14151a; /* Gris foncé */
 }
 
 .services h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #008080;
+    color: #ffffff;
 }
 
 .service-list {
@@ -100,11 +102,12 @@ nav ul li a:hover {
 }
 
 .service-item {
-    background: white;
+    background: #132d44; /* Bleu sombre pour les items de service */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    color: white; /* Texte blanc dans chaque élément de service */
 }
 
 .service-item:hover {
@@ -112,26 +115,26 @@ nav ul li a:hover {
 }
 
 .service-item h3 {
-    color: #008080;
+    color: #ffffff; /* Titre des services en blanc */
 }
 
 /* À PROPOS */
 .about {
     padding: 60px 20px;
     text-align: center;
-    background-color: #f0f8ff;
+    background-color: #132d44; /* Bleu sombre pour la section à propos */
 }
 
 .about h2 {
-    color: #008080;
+    color: #ffffff;
 }
 
 /* CONTACT */
 .contact {
     padding: 60px 20px;
     text-align: center;
-    background-color: #008080;
-    color: white;
+    background-color: #14151a; /* Gris foncé pour la section contact */
+    color: #ffffff;
 }
 
 .contact h2 {
@@ -152,8 +155,8 @@ input, textarea {
 }
 
 button {
-    background-color: #00ffcc;
-    color: #008080;
+    background-color: #ffffff; /* Bouton blanc */
+    color: #132d44; /* Texte bleu sombre */
     border: none;
     padding: 12px 25px;
     cursor: pointer;
@@ -163,20 +166,20 @@ button {
 }
 
 button:hover {
-    background-color: #00bfff;
+    background-color: #132d44; /* Fond bleu sombre au survol */
+    color: #ffffff; /* Texte en blanc au survol */
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #006666;
+    background-color: #14151a; /* Gris foncé pour le footer */
     color: white;
 }
 
 /* Rendre le site responsive pour tablette et mobile */
 @media (max-width: 1024px) {
-    /* Adapter les images et le contenu du header */
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -218,7 +221,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /* Pour les petits écrans comme les mobiles */
     .service-list {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -259,7 +261,6 @@ footer {
     }
 }
 
-/* Mobile spécifique */
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 1.5em;
@@ -278,27 +279,15 @@ footer {
     }
 }
 
-    /* Afficher le menu lorsque la classe .active est ajoutée */
+/* Mobile spécifique */
+@media (max-width: 480px) {
+    /* Quand le menu est actif (ouvert) */
     nav.active ul {
         display: flex;
-    }
-
-    /* Adapter l'icône hamburger pour les petits écrans */
-    .menu-toggle {
-        display: flex;
         flex-direction: column;
-        gap: 5px;
-        cursor: pointer;
+        gap: 0;
     }
 
-    .menu-toggle .bar {
-        width: 30px;
-        height: 4px;
-        background-color: white;
-        border-radius: 5px;
-    }
-
-    /* Changer l'apparence de l'icône hamburger quand le menu est actif */
     .menu-toggle.active .bar:nth-child(1) {
         transform: rotate(45deg);
         position: relative;
@@ -314,3 +303,4 @@ footer {
         position: relative;
         top: -8px;
     }
+}
