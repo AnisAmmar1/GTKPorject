@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #7dbc15; /* Vert */
-    color: #132d44; /* Texte bleu sombre */
+    background-color: #132d44; /* Bleu sombre */
+    color: #ffffff; /* Texte en blanc */
     box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #132d44; /* Bleu sombre pour le header */
+    background-color: #14151a; /* Gris foncé pour le header */
     padding: 15px 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -43,20 +43,21 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffffff; /* Couleur du texte au survol reste blanc */
+    color: #7dbc15; /* Ajout du vert lors du survol */
 }
 
 /* HERO SECTION */
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #132d44, #7dbc15); /* Dégradé bleu-vert */
+    background: linear-gradient(135deg, #14151a, #132d44); /* Dégradé gris-bleu */
     color: white;
 }
 
 .hero h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    color: #7dbc15; /* Titre en vert */
 }
 
 .hero p {
@@ -67,8 +68,8 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #132d44; /* Bleu sombre pour le bouton */
-    color: #7dbc15; /* Texte vert */
+    background-color: #7dbc15; /* Bouton vert */
+    color: #132d44; /* Texte bleu sombre */
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -76,21 +77,21 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #7dbc15; /* Fond vert au survol */
-    color: #132d44; /* Texte bleu sombre au survol */
+    background-color: #132d44; /* Fond bleu sombre au survol */
+    color: #ffffff; /* Texte en blanc au survol */
 }
 
 /* SERVICES */
 .services {
     padding: 60px 20px;
     text-align: center;
-    background-color: #132d44; /* Bleu sombre */
+    background-color: #14151a; /* Gris foncé */
 }
 
 .services h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #7dbc15; /* Titre des services en vert */
 }
 
 .service-list {
@@ -102,7 +103,7 @@ nav ul li a:hover {
 }
 
 .service-item {
-    background: #7dbc15; /* Vert pour les items de service */
+    background: #132d44; /* Bleu sombre pour les items de service */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -115,30 +116,31 @@ nav ul li a:hover {
 }
 
 .service-item h3 {
-    color: #ffffff; /* Titre des services en blanc */
+    color: #7dbc15; /* Titre des services en vert */
 }
 
 /* À PROPOS */
 .about {
     padding: 60px 20px;
     text-align: center;
-    background-color: #7dbc15; /* Vert pour la section à propos */
+    background-color: #132d44; /* Bleu sombre pour la section à propos */
 }
 
 .about h2 {
-    color: #132d44; /* Texte bleu sombre */
+    color: #7dbc15; /* Titre à propos en vert */
 }
 
 /* CONTACT */
 .contact {
     padding: 60px 20px;
     text-align: center;
-    background-color: #132d44; /* Bleu sombre pour la section contact */
+    background-color: #14151a; /* Gris foncé pour la section contact */
     color: #ffffff;
 }
 
 .contact h2 {
     margin-bottom: 20px;
+    color: #7dbc15; /* Titre du contact en vert */
 }
 
 form {
@@ -155,8 +157,8 @@ input, textarea {
 }
 
 button {
-    background-color: #132d44; /* Bleu sombre pour le bouton */
-    color: #7dbc15; /* Texte vert */
+    background-color: #7dbc15; /* Bouton vert */
+    color: #132d44; /* Texte bleu sombre */
     border: none;
     padding: 12px 25px;
     cursor: pointer;
@@ -166,15 +168,15 @@ button {
 }
 
 button:hover {
-    background-color: #7dbc15; /* Fond vert au survol */
-    color: #132d44; /* Texte bleu sombre au survol */
+    background-color: #132d44; /* Fond bleu sombre au survol */
+    color: #ffffff; /* Texte en blanc au survol */
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #132d44; /* Bleu sombre pour le footer */
+    background-color: #14151a; /* Gris foncé pour le footer */
     color: white;
 }
 
@@ -197,6 +199,7 @@ footer {
 
     .hero h1 {
         font-size: 2.2em;
+        color: #7dbc15; /* Titre en vert */
     }
 
     .hero p {
@@ -205,6 +208,7 @@ footer {
 
     .services h2 {
         font-size: 1.8em;
+        color: #7dbc15; /* Titre des services en vert */
     }
 
     .service-item {
@@ -213,10 +217,12 @@ footer {
 
     .about h2 {
         font-size: 1.8em;
+        color: #7dbc15; /* Titre à propos en vert */
     }
 
     .contact h2 {
         font-size: 1.8em;
+        color: #7dbc15; /* Titre contact en vert */
     }
 }
 
@@ -232,6 +238,7 @@ footer {
 
     .hero h1 {
         font-size: 1.8em;
+        color: #7dbc15; /* Titre en vert */
     }
 
     .hero p {
@@ -258,12 +265,14 @@ footer {
 
     .services h2, .about h2, .contact h2 {
         font-size: 1.6em;
+        color: #7dbc15; /* Titres des sections en vert */
     }
 }
 
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 1.5em;
+        color: #7dbc15; /* Titre en vert */
     }
 
     .hero p {
@@ -276,6 +285,7 @@ footer {
 
     button {
         padding: 10px 20px;
+        background-color: #7dbc15; /* Bouton vert */
     }
 }
 
