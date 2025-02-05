@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #132d44; /* Bleu sombre */
-    color: #ffffff; /* Texte en blanc */
+    background-color: #7dbc15; /* Vert */
+    color: #132d44; /* Texte bleu sombre */
     box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #7dbc15; /* Gris foncé pour le header */
+    background-color: #132d44; /* Bleu sombre pour le header */
     padding: 15px 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -50,7 +50,7 @@ nav ul li a:hover {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #7dbc15, #132d44); /* Dégradé gris-bleu */
+    background: linear-gradient(135deg, #132d44, #7dbc15); /* Dégradé bleu-vert */
     color: white;
 }
 
@@ -67,8 +67,8 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #ffffff; /* Bouton blanc */
-    color: #132d44; /* Texte bleu sombre */
+    background-color: #132d44; /* Bleu sombre pour le bouton */
+    color: #7dbc15; /* Texte vert */
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -76,15 +76,15 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #132d44; /* Fond bleu sombre au survol */
-    color: #ffffff; /* Texte en blanc au survol */
+    background-color: #7dbc15; /* Fond vert au survol */
+    color: #132d44; /* Texte bleu sombre au survol */
 }
 
 /* SERVICES */
 .services {
     padding: 60px 20px;
     text-align: center;
-    background-color: #7dbc15; /* Gris foncé */
+    background-color: #132d44; /* Bleu sombre */
 }
 
 .services h2 {
@@ -102,7 +102,7 @@ nav ul li a:hover {
 }
 
 .service-item {
-    background: #132d44; /* Bleu sombre pour les items de service */
+    background: #7dbc15; /* Vert pour les items de service */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -122,18 +122,18 @@ nav ul li a:hover {
 .about {
     padding: 60px 20px;
     text-align: center;
-    background-color: #132d44; /* Bleu sombre pour la section à propos */
+    background-color: #7dbc15; /* Vert pour la section à propos */
 }
 
 .about h2 {
-    color: #ffffff;
+    color: #132d44; /* Texte bleu sombre */
 }
 
 /* CONTACT */
 .contact {
     padding: 60px 20px;
     text-align: center;
-    background-color: #7dbc15; /* Gris foncé pour la section contact */
+    background-color: #132d44; /* Bleu sombre pour la section contact */
     color: #ffffff;
 }
 
@@ -155,8 +155,8 @@ input, textarea {
 }
 
 button {
-    background-color: #ffffff; /* Bouton blanc */
-    color: #132d44; /* Texte bleu sombre */
+    background-color: #132d44; /* Bleu sombre pour le bouton */
+    color: #7dbc15; /* Texte vert */
     border: none;
     padding: 12px 25px;
     cursor: pointer;
@@ -166,15 +166,15 @@ button {
 }
 
 button:hover {
-    background-color: #132d44; /* Fond bleu sombre au survol */
-    color: #ffffff; /* Texte en blanc au survol */
+    background-color: #7dbc15; /* Fond vert au survol */
+    color: #132d44; /* Texte bleu sombre au survol */
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #7dbc15; /* Gris foncé pour le footer */
+    background-color: #132d44; /* Bleu sombre pour le footer */
     color: white;
 }
 
