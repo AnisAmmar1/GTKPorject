@@ -277,3 +277,26 @@ footer {
         padding: 10px 20px;
     }
 }
+/* Quand le menu est actif (ouvert) */
+nav.active ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* Quand le bouton hamburger est cliqué, changer l'icône */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}

@@ -7,3 +7,9 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         });
     });
 });
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    const nav = document.querySelector('nav');
+    const menuToggle = document.getElementById('menu-toggle');
+    nav.classList.toggle('active');  // Permet d'ouvrir/fermer le menu
+    menuToggle.classList.toggle('active');  // Change l'icône hamburger en croix
+});
