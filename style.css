@@ -277,26 +277,40 @@ footer {
         padding: 10px 20px;
     }
 }
-/* Quand le menu est actif (ouvert) */
-nav.active ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
 
-/* Quand le bouton hamburger est cliqué, changer l'icône */
-.menu-toggle.active .bar:nth-child(1) {
-    transform: rotate(45deg);
-    position: relative;
-    top: 8px;
-}
+    /* Afficher le menu lorsque la classe .active est ajoutée */
+    nav.active ul {
+        display: flex;
+    }
 
-.menu-toggle.active .bar:nth-child(2) {
-    opacity: 0;
-}
+    /* Adapter l'icône hamburger pour les petits écrans */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
 
-.menu-toggle.active .bar:nth-child(3) {
-    transform: rotate(-45deg);
-    position: relative;
-    top: -8px;
-}
+    .menu-toggle .bar {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    /* Changer l'apparence de l'icône hamburger quand le menu est actif */
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 8px;
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -8px;
+    }
