@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #14151a; /* Gris foncé pour le header */
+    background-color: #7dbc15; /* Gris foncé pour le header */
     padding: 15px 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -50,7 +50,7 @@ nav ul li a:hover {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #14151a, #132d44); /* Dégradé gris-bleu */
+    background: linear-gradient(135deg, #7dbc15, #132d44); /* Dégradé gris-bleu */
     color: white;
 }
 
@@ -84,7 +84,7 @@ nav ul li a:hover {
 .services {
     padding: 60px 20px;
     text-align: center;
-    background-color: #14151a; /* Gris foncé */
+    background-color: #7dbc15; /* Gris foncé */
 }
 
 .services h2 {
@@ -133,7 +133,7 @@ nav ul li a:hover {
 .contact {
     padding: 60px 20px;
     text-align: center;
-    background-color: #14151a; /* Gris foncé pour la section contact */
+    background-color: #7dbc15; /* Gris foncé pour la section contact */
     color: #ffffff;
 }
 
@@ -174,7 +174,7 @@ button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #14151a; /* Gris foncé pour le footer */
+    background-color: #7dbc15; /* Gris foncé pour le footer */
     color: white;
 }
 
